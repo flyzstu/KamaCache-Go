@@ -9,9 +9,9 @@ import (
 
 	"crypto/tls"
 
+	pb "github.com/flyzstu/KamaCache-Go/pb"
+	"github.com/flyzstu/KamaCache-Go/registry"
 	"github.com/sirupsen/logrus"
-	pb "github.com/youngyangyang04/KamaCache-Go/pb"
-	"github.com/youngyangyang04/KamaCache-Go/registry"
 	clientv3 "go.etcd.io/etcd/client/v3"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
@@ -43,7 +43,7 @@ type ServerOptions struct {
 
 // DefaultServerOptions 默认配置
 var DefaultServerOptions = &ServerOptions{
-	EtcdEndpoints: []string{"localhost:2379"},
+	// EtcdEndpoints: []string{"localhost:2379"},
 	DialTimeout:   5 * time.Second,
 	MaxMsgSize:    4 << 20, // 4MB
 }

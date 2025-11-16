@@ -8,8 +8,8 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/flyzstu/KamaCache-Go/singleflight"
 	"github.com/sirupsen/logrus"
-	"github.com/youngyangyang04/KamaCache-Go/singleflight"
 )
 
 var (

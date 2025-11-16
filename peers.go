@@ -8,9 +8,9 @@ import (
 	"sync"
 	"time"
 
+	"github.com/flyzstu/KamaCache-Go/consistenthash"
+	"github.com/flyzstu/KamaCache-Go/registry"
 	"github.com/sirupsen/logrus"
-	"github.com/youngyangyang04/KamaCache-Go/consistenthash"
-	"github.com/youngyangyang04/KamaCache-Go/registry"
 	clientv3 "go.etcd.io/etcd/client/v3"
 )
 
